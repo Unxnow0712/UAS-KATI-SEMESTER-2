@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEARUS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <table width="80%" align="center" height="100px" >
+      <tr>
+        <!-- SIDE BAR -->
+        <td rowspan="9" width="16%" valign="top" bgcolor="#FCFAF7">
+            <div class="sidebar">
+                <table>
+                    <tr>
+                        <td valign="top" height="10%">
+                            <h2>CATEGORY</h2>
+                                <ul>
+                                    <li><a href="polo.html">Polo shirt</a></li>
+                                    <li><a href="outware.html">Outware</a></li>
+                                    <li><a href="bag.html">Bag</a></li>
+                                    <li><a href="shoes.html">Shoes</a></li>
+                                </ul>
+                                <hr>
+                            <h2>BRAND</h2>
+
+                            <ul>
+                                <li><a href="transaksi.html">Gucci</a></li>
+                                <li><a href="transaksi7.html">Christian Dior</a></li>
+                                <li><a href="transaksi4.html">Thom Brwone</a></li>
+                                <li><a href="transaksi3.html">Prada</a></li>
+                            </ul>
+                            <hr>
+
+                                <div class="himher">
+                                    <a href="product.html">FOR HIM</a>
+                                <br>
+                                <a href="producther.html">FOR HER</a>
+
+                                </div>
+                            <hr>
+
+                                <a href="product.html"><p>ALL PRODUCT</p></a>
+                                <a href="aboutus.html"><p>ABOUT US</p></a>
+
+                    </tr>
+                </table>
+            </div>
+      </td>
+        <!-- //END SIDE BAR -->
+
+        <!-- CONTENT -->
+        <form id="checkout-form">
+            <tr>
+                <td bgcolor="white" colspan="2"><h1><font face="sans-serif">CHECKOUT</font></h1></td>
+            </tr>
+            <tr height="500px" bgcolor="white">
+                <td width="10%" valign="center" align="center"><img src="images/gucci3.webp" alt="gucci1" width="350px" id="product-image">
+                </td>
+                <td width="50%" valign="center">
+
+                    <p><font size="20px"><b><span id="product">GG Monogram</span></b></font></p>
+                    <p>GG Monogram Nylon M Backpack (bb)</p>
+
+                    <p><font size="5px" face="sans-serif">Color: </font><select name="color" id="color">
+                        <option value="Black">Black</option>
+                    </select></p>
+
+                    <p><font size="5px" face="sans-serif">Size: </font><select name="size" id="size">
+                        <option value="-">-</option>
+                    </select></p>
+
+                    <font face="sans-serif"><p>DISCOUNT 10%</p></font>
+                    <p><font color="red" face="sans-serif"><s>Rp 29.749.000</s></font></p>
+                    <P><font size="20px" face="sans-serif"><b><span id="harga" name="harga">Rp 26.774.100</span></b></font></P>
+
+                </td>
+            </tr>
+            <tr height="500px" bgcolor="white" valign="top">
+                <td rowspan="2" colspan="2">
+                    <hr>
+                    <div class="container">
+        <h3>Shipping Address</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <br>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" required />
+        <br>
+        <label for="apartment">Apartment/Unit (Optional):</label>
+        <input type="text" id="apartment" name="apartment" />
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required />
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required />
+
+        <h3>Delivery</h3>
+        <label for="delivery-type">Delivery Type:</label>
+        <select id="delivery-type" name="delivery-type">
+          <option value="fast">Fast</option>
+          <option value="standard">Standard</option>
+        </select>
+        <div class="pilih">
+            
+            <label for="delivery-service">Delivery Service:</label>
+            <input type="radio" id="fedex" name="delivery-service" value="FedEx" />
+            <label for="fedex">FedEx</label>
+            <input type="radio" id="dhl" name="delivery-service" value="DHL" />
+            <label for="dhl">DHL</label>
+        </div>
+
+        <h3>Payment</h3>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required />
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required />
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" required />
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to Term Of Service and Privacy Policy
+        </label>
+        <button type="submit">Purchase</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+          </td>
+        </tr>
+          <tr height="500px" bgcolor="white">
+          </tr>
+      </tr>
+    </table>
+    <!-- //END CONTENT -->
+
+    <!-- FOOTER -->
+    <table width="100%" bgcolor="#293b36">
+      <tr>
+          <td width="10%"></td>
+      <td height="50" width="10%">
+          <img src="images/logo.png" alt="logo" width="100%" />
+      </td>
+      <td width="5%"></td>
+      <td width="15%" align="center" valign="top">
+          <font color="#B68D40" face="sans-serif">
+          <h2>EXPLORE</h2>
+          </font>
+          <a href="aboutus.html"><font color="#B68D40" face="sans-serif">ABOUT US</font></a>
+      </td>
+      <td width="5%"></td>
+      <td width="15%" align="center" valign="top">
+          <font color="#B68D40" face="sans-serif">
+          <h2>FOLLOW US</h2>
+          <p><a href="https://www.instagram.com/agung.lutfiee/" target="_blank"><font color="#B68D40">INSTAGRAM</font></a></p>
+          <p><a href="https://www.facebook.com/" target="_blank"><font color="#B68D40">FACEBOOK</font></p>
+          <p><a href="https://twitter.com/home" target="_blank"><font color="#B68D40">TWITTER</font></p>
+          <p><a href="https://www.youtube.com/" target="_blank"><font color="#B68D40">YOUTUBE</font></p>
+          </font>
+      </td>
+      <td></td>
+      </tr>
+  </table>
+        <!-- //END FOOTER -->
+  </body>
+</html>

@@ -1,0 +1,162 @@
+/* Side bar */
+
+.sidebar {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  top: 0;
+}
+.sidebar li {
+  list-style: none;
+  padding: 3px 0px;
+  position: relative;
+  color: rgb(49, 46, 46);
+}
+
+.sidebar a {
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.sidebar ul {
+  font-size: 5px;
+  padding: 0px 0px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #088178;
+}
+
+.sidebar table {
+  width: 80%;
+  height: 100%;
+}
+
+.himher {
+  padding: 10px 0px;
+}
+
+.sidebar table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.header a:hover,
+.header a.active {
+  color: #088178;
+}
+
+.table1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+.table2 {
+  margin-left: 0px;
+}
+
+.header a {
+  color: #b68d40;
+}
+
+/* Check out */
+.pilih {
+  max-width: 200px;
+}
+.pilih label {
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.container2 {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.product-info img {
+  width: 350px;
+}
+.form-group {
+  margin-bottom: 1em;
+}
+label {
+  display: block;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+input[type="checkbox"] {
+  margin-top: 1em;
+  width: auto;
+}
+button[type="submit"] {
+  margin-top: 0.8em;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.confirmation {
+  display: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Menu */
+.menu a:hover,
+.menu a.active {
+  color: #088178;
+}
+/* All code */
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+}
+
+marquee {
+  behavior: scroll;
+  direction: left;
+  color: #b68d40;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* table,
+td,
+th {
+  border: 1px solid;
+} */

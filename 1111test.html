@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+      .product-info img {
+        width: 350px;
+      }
+      .form-group {
+        margin-bottom: 1em;
+      }
+      .form-group label {
+        display: block;
+      }
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-top: 0.5em;
+      }
+      .form-group input[type="checkbox"] {
+        width: auto;
+      }
+      .form-group input[type="submit"] {
+        width: auto;
+        padding: 0.5em 1em;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .confirmation {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CHECKOUT</h1>
+      <div class="product-info">
+        <img src="images/gucci1.webp" alt="Gucci Polo Shirt" />
+        <h2>GUCCI</h2>
+        <p>Gucci Double G Red Blue Collar Detailed Polo Shirt White</p>
+        <p>
+          Color:
+          <select id="color">
+            <option value="white">White</option>
+          </select>
+        </p>
+        <p>
+          Size:
+          <select id="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </p>
+        <p>DISCOUNT 34%</p>
+        <p><s>Rp 17.000.000</s></p>
+        <p><strong>Rp 11.300.000</strong></p>
+      </div>
+
+      <h2>Shipping Address</h2>
+      <form id="checkoutForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="street">Street Address:</label>
+          <textarea id="street" cols="50" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="apartment">Apartment/Unit (Optional):</label>
+          <input type="text" id="apartment" />
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" required />
+        </div>
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <input type="text" id="country" required />
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zip Code:</label>
+          <input type="text" id="zipcode" required />
+        </div>
+
+        <h2>Delivery</h2>
+        <div class="form-group">
+          <label for="deliveryType">Delivery Type:</label>
+          <select id="deliveryType" required>
+            <option value="Fast">Fast</option>
+            <option value="Regular">Regular</option>
+            <option value="Economy">Economy</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Delivery Service:</label>
+          <input type="radio" name="deliveryService" value="FedEx" required /> FedEx <input type="radio" name="deliveryService" value="DHL" required /> DHL
+        </div>
+
+        <h2>Payment</h2>
+        <div class="form-group">
+          <label for="cardNumber">Card Number:</label>
+          <input type="number" id="cardNumber" required />
+        </div>
+        <div class="form-group">
+          <label for="expirationDate">Expiration Date:</label>
+          <input type="text" id="expirationDate" required />
+        </div>
+        <div class="form-group">
+          <label for="cvc">CVC:</label>
+          <input type="text" id="cvc" required />
+        </div>
+        <div class="form-group"><input type="checkbox" id="terms" required /> I agree to the Terms of Service and Privacy Policy</div>
+        <div class="form-group">
+          <input type="submit" value="Continue" />
+        </div>
+      </form>
+
+      <div class="confirmation">
+        <h2>Order Confirmation</h2>
+        <p>Thank you for your order!</p>
+        <p><strong>Name:</strong> <span id="confirmName"></span></p>
+        <p><strong>Email:</strong> <span id="confirmEmail"></span></p>
+        <p><strong>Phone Number:</strong> <span id="confirmPhone"></span></p>
+        <p><strong>Street Address:</strong> <span id="confirmStreet"></span></p>
+        <p><strong>Apartment/Unit:</strong> <span id="confirmApartment"></span></p>
+        <p><strong>City:</strong> <span id="confirmCity"></span></p>
+        <p><strong>Country:</strong> <span id="confirmCountry"></span></p>
+        <p><strong>Zip Code:</strong> <span id="confirmZipcode"></span></p>
+        <p><strong>Delivery Type:</strong> <span id="confirmDeliveryType"></span></p>
+        <p><strong>Delivery Service:</strong> <span id="confirmDeliveryService"></span></p>
+        <p><strong>Card Number:</strong> <span id="confirmCardNumber"></span></p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("checkoutForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        document.querySelector(".confirmation").style.display = "block";
+        document.getElementById("checkoutForm").style.display = "none";
+
+        document.getElementById("confirmName").innerText = document.getElementById("name").value;
+        document.getElementById("confirmEmail").innerText = document.getElementById("email").value;
+        document.getElementById("confirmPhone").innerText = document.getElementById("phone").value;
+        document.getElementById("confirmStreet").innerText = document.getElementById("street").value;
+        document.getElementById("confirmApartment").innerText = document.getElementById("apartment").value;
+        document.getElementById("confirmCity").innerText = document.getElementById("city").value;
+        document.getElementById("confirmCountry").innerText = document.getElementById("country").value;
+        document.getElementById("confirmZipcode").innerText = document.getElementById("zipcode").value;
+        document.getElementById("confirmDeliveryType").innerText = document.getElementById("deliveryType").value;
+        document.getElementById("confirmDeliveryService").innerText = document.querySelector('input[name="deliveryService"]:checked').value;
+        document.getElementById("confirmCardNumber").innerText = document.getElementById("cardNumber").value;
+      });
+    </script>
+  </body>
+</html>
